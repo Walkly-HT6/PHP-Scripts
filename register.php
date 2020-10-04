@@ -18,12 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] =='POST'){
 
     if ( mysqli_query($conn, $sql) ) {
         $result = "1";
+        echo $result;
 
         mysqli_close($conn);
 
     } else {
 
         $result = "0";
+        echo $result;
         mysqli_close($conn);
     }
 }
